@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-style: oblique;
+}
+#Foto{
+    display: block;
+    margin: 0 auto;
+}
+figcaption{
+    text-align: center;
+}
+.section{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+a[href="https://www.linkedin.com/in/guilherme-nishikawa-3a0bb036a/"]{
+    background-color: gray;
+}
+a:hover{
+    background-color: red;
+}

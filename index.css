@@ -1,0 +1,226 @@
+/* RESET DE CSS E VARIÁVEIS (4 ou mais cores aplicadas) */
+:root {
+    --cor-primaria: #0d47a1; /* Azul Escuro */
+    --cor-secundaria: #ffca28; /* Amarelo */
+    --cor-texto: #333333; /* Cinza Escuro */
+    --cor-fundo: #f4f6f8; /* Cinza Claro */
+    --cor-branca: #ffffff; /* Branco */
+    
+    /* 2 ou mais fontes (Requisito) */
+    --fonte-titulos: 'Poppins', sans-serif;
+    --fonte-textos: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-textos);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+.main-header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .logo {
+    font-family: var(--fonte-titulos);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.main-header .logo span {
+    color: var(--cor-secundaria);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navbar a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--cor-secundaria);
+}
+
+.btn-sair {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+/* BANNER PRINCIPAL (HERO) */
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--cor-branca);
+}
+
+.hero-img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.hero-content h2 {
+    font-family: var(--fonte-titulos);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--cor-secundaria);
+}
+
+.hero-content span {
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+/* SEÇÃO SOBRE */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 4rem 5%;
+    background-color: var(--cor-branca);
+    gap: 2rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.about-text ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.about-text li {
+    margin-bottom: 0.5rem;
+}
+
+.about-text i {
+    color: var(--cor-secundaria);
+    margin-right: 10px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* SEÇÃO DE CURSOS (OPORTUNIDADES) */
+.courses-section {
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.courses-section h2 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-primaria);
+    margin-bottom: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--cor-branca);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+}
+
+
+
+.btn-card:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+/* RODAPÉ */
+.main-footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 2rem 5%;
+    margin-top: 2rem;
+}
+
+.team-links {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.team-links a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.team-links a:hover {
+    text-decoration: underline;
+}

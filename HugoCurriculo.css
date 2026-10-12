@@ -1,0 +1,56 @@
+/* 1. Seletor por Elemento | Fonte Externa | Contraste de Cores */
+body {
+    font-family: 'Open Sans', sans-serif; /* Fonte 1 (Externa) */
+    background-color: #f0f2f5; /* Cor de fundo clara */
+    color: #333; /* Cor da fonte escura para dar contraste */
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 2. Segunda Fonte Distinta */
+h1, h2 {
+    font-family: Arial, sans-serif; /* Fonte 2 (Sistema) */
+    color: #0056b3;
+}
+
+/* 3. Seletor por Classe | Estilo Itálico */
+.titulo-principal {
+    font-style: italic; /* Opção de estilo 1 */
+    text-align: center;
+}
+
+/* 4. Seletor por ID | Estilo Negrito */
+#sessao-resumo {
+    background-color: #fff;
+    padding: 15px;
+    border-left: 4px solid #0056b3;
+    font-weight: bold; /* Opção de estilo 2 */
+}
+
+/* 5. Seletor por Atributo | Decoração de Texto */
+a[target="_blank"] {
+    text-decoration: underline; /* Decoração de texto */
+    font-weight: bold;
+}
+
+/* Links em geral sem sublinhado por padrão */
+a {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+/* 6. Seletor por Pseudo-classe (Alterar cor do link ao passar o mouse) */
+a:hover {
+    color: #ff5722; /* Muda a cor quando passa o mouse */
+    text-decoration: underline;
+}
+
+/* Ajustes simples nas imagens */
+figure {
+    text-align: center;
+}
+
+img {
+    border-radius: 10px;
+}

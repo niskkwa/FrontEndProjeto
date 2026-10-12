@@ -1,0 +1,126 @@
+/* Reseta margens e define o modelo de caixa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; /* Fonte mais genérica */
+}
+
+body {
+    background-color: #ffffff; /* Fundo branco chapado */
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do Cabeçalho */
+.header-login {
+    background-color: #004080; /* Azul mais básico */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.header-login h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0; /* Remove o gap */
+    padding: 50px 20px;
+    flex: 1;
+}
+
+/* Caixas dos Formulários */
+.form-section {
+    background-color: #ffffff;
+    border-radius: 0; /* Remove o border-radius */
+    padding: 15px; /* Reduz o padding */
+    width: 100%;
+    max-width: 420px;
+    border: 2px solid #ccc; /* Adiciona borda simples */
+    margin: 10px; /* Adiciona margem simples */
+}
+
+.form-section h2 {
+    color: #007bff; /* Azul mais vibrante */
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Estilização dos Campos de Entrada */
+.input-group {
+    margin-bottom: 8px; /* Reduz o margin-bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 2px;
+    font-weight: inherit; /* Remove negrito */
+    font-size: 14px;
+    color: #555555;
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+.input-group input {
+    padding: 8px; /* Reduz o padding */
+    border: 2px solid #555; /* Borda mais grossa e escura */
+    border-radius: 0; /* Remove o border-radius */
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: red; /* Borda vermelha no foco */
+}
+
+/* Estilização dos Botões */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 0; /* Remove o border-radius */
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: inherit; /* Remove negrito */
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Remove efeitos de transição e active */
+
+/* Botão do Cadastro (Secundário) */
+.btn-primary {
+    background-color: lightblue; /* Cor mais simplista */
+    color: blue;
+    border: 1px solid blue; /* Adiciona borda simples */
+}
+
+/* Botão do Login (Principal) */
+.btn-success {
+    background-color: #007bff; /* Cor mais básica */
+    color: #ffffff;
+    border: 1px solid #0056b3; /* Adiciona borda simples */
+}
+
+/* Rodapé */
+footer {
+    background-color: #004080; /* Cor mais básica */
+    color: #ccc; /* Texto mais apagado */
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-size: 12px;
+}
+
+
