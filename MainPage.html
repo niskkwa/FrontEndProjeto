@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AprendeMais - Página Principal</title>
+    
+    <!-- Duas Fontes Externas  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Ícones (2 ou mais ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Cabeçalho e Menu de Navegação -->
+    <header class="main-header">
+        <div class="logo">
+            <i class="fa-solid fa-book-open"></i> Aprende<span>Mais</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#sobre">Sobre o Projeto</a></li>
+                <li><a href="#cursos">Oportunidades</a></li>
+                <!-- simular a saída voltando para o login -->
+                <li><a href="index.html" class="btn-sair">Sair <i class="fa-solid fa-right-from-bracket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner Principal (Imagem 1) -->
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80" alt="Estudantes colaborando em um projeto" class="hero-img">
+            <div class="hero-content">
+                <h1>Educação de Qualidade para Todos</h1>
+                <p>O <span>AprendeMais</span> é focado no Objetivo de Desenvolvimento Sustentável (ODS) 4. Nossa missão é garantir acesso à educação inclusiva, de qualidade e equitativa.</p>
+            </div>
+        </section>
+
+        <!-- Seção Sobre (Imagem 2) -->
+        <section id="sobre" class="about-section">
+            <div class="about-text">
+                <h2>Por que a Educação Importa?</h2>
+                <p>A educação é a chave para transformar vidas e comunidades. Através de cursos gratuitos e profissionalizantes, ajudamos pessoas a se prepararem para o mercado de trabalho, diminuindo desigualdades.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Cursos totalmente gratuitos.</li>
+                    <li><i class="fa-solid fa-check"></i> Foco no desenvolvimento profissional.</li>
+                    <li><i class="fa-solid fa-check"></i> Acessível para jovens e adultos.</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Professora ensinando alunos">
+            </div>
+        </section>
+
+        <!-- Seção Oportunidades (Imagens 3, 4 e 5) -->
+        <section id="cursos" class="courses-section">
+            <h2>Nossos Cursos em Destaque</h2>
+            <div class="cards-container">
+                
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&q=80" alt="Notebook com código de programação">
+                    <div class="card-content">
+                        <h3>Lógica de Programação</h3>
+                        <p>Dê os primeiros passos no mundo da tecnologia aprendendo a programar do zero.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&q=80" alt="Pessoas analisando gráficos financeiros">
+                    <div class="card-content">
+                        <h3>Educação Financeira</h3>
+                        <p>Aprenda a gerenciar suas finanças pessoais de forma inteligente e sustentável.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&q=80" alt="Grupo discutindo ideias empreendedoras">
+                    <div class="card-content">
+                        <h3>Empreendedorismo</h3>
+                        <p>Transforme suas ideias em pequenos negócios que impactam a sua comunidade local.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé com Links dos Currículos -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Projeto AprendeMais. ODS 4 - Educação de Qualidade.</p>
+            <p><strong>Desenvolvido pela Equipe:</strong></p>
+            <nav class="team-links">
+                <a href="vitae.html" target="_blank"><i class="fa-solid fa-user-graduate"></i> Currículo: Nishikawa</a>
+                <a href="HugoCurriculo.html" target="_blank"><i class="fa-solid fa-user-graduate"></i> Currículo: Hugo</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
